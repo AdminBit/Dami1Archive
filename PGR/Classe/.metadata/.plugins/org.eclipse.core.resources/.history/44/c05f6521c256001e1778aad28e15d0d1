@@ -1,0 +1,36 @@
+package ud1;
+
+import java.util.Scanner;
+
+public class MenuString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name;
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("Cual es tu nombre ? ");
+		name=teclado.nextLine();
+		System.out.println("Bienvenido " + name + ". ¿Qué quieres hacer? ");
+
+		System.out.println("1.- Dar la vuelta a una palabra.");
+		System.out.println("2.- Comparar dos palabras.");
+		System.out.println("3.-Numero de letras");
+		System.out.println("4.- Repetir palabra");
+		System.out.println("5.- Repetir palabra (Mayúscula / Minúscula)");
+		System.out.println("6.- Salir del programa");
+
+		
+
+
+		
+		
+
+
+
+
+		
+		
+		teclado.close();
+	}
+
+}

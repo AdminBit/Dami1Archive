@@ -1,0 +1,136 @@
+package ud6;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class MainPublicacion {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		ArrayList<Profesor> arrPro = new ArrayList<Profesor>();
+		ArrayList<Publicacion> arrPub = new ArrayList<Publicacion>();
+
+		Profesor p1 = new Profesor("abc@eus.eus", "abc", "Info");
+		Profesor p2 = new Profesor("abd@eus.eus", "abd", "Audio");
+		Profesor p3 = new Profesor("abe@eus.eus", "abe", "Inge");
+		Profesor p4 = new Profesor("abf@eus.eus", "abf", "Desgi");
+		arrPro.add(p1);
+		arrPro.add(p2);
+		arrPro.add(p3);
+		arrPro.add(p4);
+		int opc;
+
+		do {
+			System.out.println("1. add profesores ");
+			System.out.println("2. Añadir publicación.");
+			System.out.println("3. A.");
+			System.out.println("4. A.");
+
+			System.out.println("10. Salir");
+			System.out.println("Que queres hacer :");
+
+			opc = sc.nextInt();
+
+			switch (opc) {
+			case 1:
+				// Introducir un nuevo profesor
+				introducirProfesor(arrPro, sc);
+				break;
+			case 2:
+				// Introducir un nuevo profesor
+				introducirPublicacion(arrPro, arrPub, sc);
+				break;
+			case 3:
+				mostrarProfesor(arrPro);
+				break;
+			default:
+				System.out.println("Opcion no existe ");
+				break;
+			}
+
+		} while (opc != 10);
+
+	}// main
+
+	public static void introducirProfesor(ArrayList<Profesor> arrPro, Scanner sc) {
+		String email;
+		boolean noExiste = true;
+
+		String nombre;
+		String nombre_dep;
+
+		System.out.println("Intoduzca tu email : ");
+		email = sc.next();
+
+		// checkEmailValid(email);
+		// System.out.println(checkEmailValid(email));
+		if (checkEmailValid(email)) {
+			for (Profesor p : arrPro) {
+				if (p.getEmail().equalsIgnoreCase(email)) {
+					System.out.println("Ya existe ");
+					noExiste = false;
+				}
+			}
+			if (noExiste) {
+				System.out.println("Intoduzca tu nombre : ");
+				nombre = sc.next();
+
+				System.out.println("Intoduzca dep nombre : ");
+				nombre_dep = sc.next();
+
+				Profesor p = new Profesor(email, nombre, nombre_dep);
+				arrPro.add(p);
+
+			}
+		}
+	}
+
+	public static void introducirPublicacion(ArrayList<Profesor> arrPro, ArrayList<Publicacion> arrPub, Scanner sc) {
+		String email;
+		String respuesta;
+		String pub_titulo;
+
+		System.out.println("Intoduzca tu email : ");
+		email = sc.next();
+		if (checkEmailValid(email)) {
+			for (Profesor pro : arrPro) {
+				if (pro.getEmail().equalsIgnoreCase(email)) {
+					for (Publicacion pub : pro.getPub()) {
+						System.out.println(pub);
+						do {
+							System.out.println("Queres añadir publicaaciones ?(si/no)");
+							respuesta = sc.next();
+						} while ((!respuesta.equalsIgnoreCase("si") || respuesta.equalsIgnoreCase("no")));
+						if (respuesta.equalsIgnoreCase("si")) {
+
+						}
+					}
+				}
+				
+			}
+		}
+	}
+
+	public static void mostrarProfesor(ArrayList<Profesor> arrPro) {
+		int i = 1;
+		for (Profesor pro : arrPro) {
+			System.out.println("*** Profesor nº :" + i);
+			System.out.println("email  :" + pro.getEmail());
+			System.out.println("nombre  :" + pro.getNombre());
+			System.out.println("Depart  :" + pro.getNombre_dep());
+			i++;
+		}
+	}
+
+	public static boolean checkEmailValid(String email) {
+		String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\." + "[a-zA-Z0-9_+&*-]+)*@" + "(?:[a-zA-Z0-9-]+\\.)+[a-z"
+				+ "A-Z]{2,7}$";
+		Pattern pat = Pattern.compile(emailRegex);
+		if (email == null)
+			return false;
+		return pat.matcher(email).matches();
+	}
+
+}// class

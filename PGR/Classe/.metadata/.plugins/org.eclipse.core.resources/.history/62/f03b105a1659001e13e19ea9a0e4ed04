@@ -1,0 +1,10 @@
+package ud1;
+
+public class Gestionarnotas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,64 @@
+package ud1;
+
+import java.util.Scanner;
+
+public class MenuString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name,palabra1,palabra2;
+		int opcion;
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("Cual es tu nombre ? ");
+		name=teclado.nextLine();
+		System.out.println("Bienvenido " + name + ". ¿Qué quieres hacer? ");
+
+		System.out.println("1.- Dar la vuelta a una palabra.");
+		System.out.println("2.- Comparar dos palabras.");
+		System.out.println("3.-Numero de letras");
+		System.out.println("4.- Repetir palabra");
+		System.out.println("5.- Repetir palabra (Mayúscula / Minúscula)");
+		System.out.println("6.- Salir del programa");
+
+		
+		opcion=teclado.nextInt();
+
+		
+		switch(opcion) {
+		case 1:
+			System.out.println("1 " );
+			break;
+		case 2:
+			System.out.println("2" );
+			//comarar dos palabras
+			System.out.println("palabra 1 ");
+			palabra1=teclado.nextLine();
+			System.out.println("palabra 2 ");
+			palabra2=teclado.nextLine();
+			if(palabra1.equals(palabra2)) {
+				System.out.println(palabra1 + " y " + palabra2 + " son eguales");
+			}else {
+				System.out.println(palabra1 + " y " + palabra2 + " NO son eguales");
+			}
+			
+			break;
+		case 3:
+			System.out.println("3"  );
+			break;
+		case 4:
+			System.out.println("4" );
+			break;
+		case 5 :
+			System.out.println("5" );
+			break;
+		default:
+			System.out.println("ERROR");
+
+		
+
+		teclado.close();
+	}
+
+	}
+	
+}

@@ -1,0 +1,11 @@
+package ud6;
+
+public class ArrayListMediaTemperaturas {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}//main
+
+}//class

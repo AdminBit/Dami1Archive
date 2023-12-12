@@ -1,0 +1,24 @@
+package ud3;
+
+import java.util.Scanner;
+
+public class Ej7 {
+
+	public static void main(String[] args) {
+		
+//	Realiza la clase Java Mediatem que pide temperaturas por pantalla y las almacena 
+// en un array hasta que se introduzca la temperatura -999 que no será tenida
+// en cuenta o el array esté lleno. Después calcula la temperatura media y
+		int n=10;
+		double a[] = new double [n];
+		double numero;
+		Scanner sc = new Scanner(System.in);
+		numero=sc.nextDouble();
+		
+		while(n<10 && numero!=999 ) {
+			
+		}
+
+	}//main
+
+}

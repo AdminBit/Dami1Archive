@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto </title>
+    <link rel="icon" type="image/x-icon" href="./icons/shrek.ico">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <!--page header  menu   logo   -->
+
+    <header>
+        <!--Logo-->
+        <div class="logo">
+            <a href="./index.html"><img src="./images/logo.png" alt="shrek logo">
+            </a>
+        </div>
+        <!--Top menu-->
+
+        <nav class="menu">
+            <a href="./shrek1.html">Shrek1</a>
+            <a href="./shrek2.html">Shrek2</a>
+            <a href="./shrek3.html">Shrek3</a>
+            <a href="./shrek4.html">Shrek4</a>
+            <div class="dropdown">
+                <a>Spin offs</a>
+                    <div class="dropdown-content">
+                        <a href="./gato.html">El gato con botas 1</a>
+                        <a href="./gato2.html">El gato con botas 2</a>
+                </div>
+            </div>
+            <a href="./contact.html">Contacto</a>
+        </nav>
+    </header>
+    <!--end of header -->
+
+
+    <section class="contact">
+        <h2> Contactanos</h2>
+        <div class="main-contact">
+            <aside class="left">
+
+                <div class="about">
+                    <h3>Acerca de <span>A E E O</span></h3>
+                    <p><span>A</span>LIN</p>
+                    <p><span>E</span>LBIRE</p>
+                    <p><span>E</span>NZO</p>
+                    <p><span>O</span>MAR</p>
+                </div>
+
+                <div class="find">
+                    <h3>Localizarnos</h3>
+                    <img src="./images/maps.png" alt="image of local adress">
+                </div>
+
+
+            </aside>
+
+
+            <aside class="right">
+                <form method="post">
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="usuarioEmail" id="email" placeholder="Email" size="30" required
+                            maxlength="40">
+                    </div>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="usuarionombre" id="nombre" placeholder="Nombre" size="30" required maxlength="40">
+                    </div>
+
+
+                    <div>
+                        <label for="date">Fecha de nacimiento:</label>
+                        <input type="date" id="date" min="1950-01-01" max="2500-01-01">
+                    </div>
+
+                    <br>
+                    <div>
+                        <label>Sexo:</label>
+
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" name="hombre" value="hombre" id="hombre">
+                       
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" name="mujer" value="mujer" id="mujer">
+                    </div>
+
+
+
+                    <div>
+                        <label>Tipo de letra</label>
+                        <select>
+                            <option value="shrak1">About shrek 1</option>
+                            <option value="shrak2">About shrek 2</option>
+                            <option value="shrak3">About shrek 3</option>
+                            <option value="shrak4">About shrek 4</option>
+                            <option value="shrak4">About gato 1</option>
+                            <option value="shrak4">About gato 2</option>
+
+
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label>Text :</label>
+                        <textarea rows="10" cols="70" name="textoLargo" wrap="hard"
+                            placeholder="Puedes añadir lo que quieras:"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="reset" value="Limpiar datos">
+                        <input type="submit" value="Enviar datos">
+                    </div>
+
+                </form>
+
+            </aside>
+        </div>
+    </section>
+
+
+
+    <!--footer creditos-->
+    <footer>
+        <p>Made with <span>&#10084;</span> By A E E O in Tartanga 2023-2024</p>
+    </footer>
+    <!--end of footer-->
+</body>
+
+</html>

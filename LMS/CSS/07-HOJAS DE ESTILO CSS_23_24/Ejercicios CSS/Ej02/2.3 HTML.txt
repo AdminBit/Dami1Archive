@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ariketa 2.3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/ariketa2.3.css">
+    </head>
+    <body>
+       <h1>Esteka ezberdinak</h1>
+        <ul>
+            <li><a href="https://www.google.es">Google</a></li>
+            <li><a href="https://www.elcorreo.com">ElCorreo</a></li>
+            <li><a href="https://www.marca.com">Marca</a></li>
+            <li><a href="https://www.as.com">As</a></li>
+            <li><a href="http://www.iescruces.hezkuntza.net/web/guest">IesCruces</a></li>
+        </ul>
+    </body>
+</html>

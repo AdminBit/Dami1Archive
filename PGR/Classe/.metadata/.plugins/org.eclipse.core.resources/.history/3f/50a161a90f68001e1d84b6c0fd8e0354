@@ -1,0 +1,14 @@
+package ud3;
+
+public class Ej10 {
+
+	public static void main(String[] args) {
+
+	//10.Realiza la clase Java Caracmay pide un String por pantalla y calcula 
+	//cual es el carácter o caracteres Mayores y
+	//devuelve el carácter y la posición que ocupa.
+		
+		
+	}//main
+
+}

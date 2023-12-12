@@ -1,0 +1,98 @@
+package ud6;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		ArrayList<Alumno> alArr=new ArrayList<Alumno>();
+
+		char opc;
+
+		do {
+			System.out.println("Que queres hacer :");
+			opc = sc.next().charAt(0);
+
+			System.out.println("a. Matricular alumno/a/s");
+		
+			switch (opc) {
+			case 'a':
+				matricularAlumno(sc,alArr);
+				break;
+			case 'b':
+				break;
+			case 'c':
+				break;
+			case 'd':
+				break;
+			case 'e':
+				break;
+			case 'f':
+				break;
+			case 'g':
+				break;
+			case 'h':
+				break;
+			case 'i':
+				break;
+			default:
+				break;
+
+			}
+
+		} while (opc != 's' ||opc != 'S');
+
+	}// main
+	
+	public static void 	matricularAlumno(Scanner sc,ArrayList<Alumno> alArr) {
+		String nif;
+		String nombre;
+		String apellido;
+		String ciclo;
+		
+		boolean repetido;
+		boolean existe;
+		
+		String moduloNom;
+		double moduloNota;
+		String continuar;
+		Modulos	m;
+		ArrayList<Modulos> mList=new ArrayList<Modulos>();
+		
+		System.out.println("introduzca nif :");
+		nif = sc.next();
+		
+		System.out.println("introduzca nombre :");
+		nombre = sc.next();
+		
+		System.out.println("introduzca apellido :");
+		apellido = sc.next();
+		
+		System.out.println("introduzca ciclo :");
+		ciclo = sc.next();
+		
+		System.out.println("introduzca repetido :");
+		repetido = sc.nextBoolean();
+		
+		do {
+			System.out.println("introduzca modulo nombre :");
+			moduloNom = sc.next();
+			System.out.println("introduzca modulo nota :");
+			moduloNota = sc.nextDouble();
+			System.out.println("Queries andir mas modulos(si/no) :");
+			m=new Modulos(moduloNom,moduloNota);
+			mList.add(m);
+			continuar=sc.next();
+		}while(continuar.equals("si"));
+		
+	
+		alArr.add(new Alumno( nif , nombre , apellido, ciclo,
+				 repetido, mList));
+		
+		}
+
+
+}// class

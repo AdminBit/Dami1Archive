@@ -1,0 +1,15 @@
+package _10_Colecciones_y_diccionarios;
+
+import java.util.ArrayList;
+
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> arr= new ArrayList<Integer>();
+
+		
+		
+	}//main
+
+}

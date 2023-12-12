@@ -1,0 +1,15 @@
+package _09_ConceptosPOO.Ejercicio01;
+
+public class CaballoEj01 {
+	//Caballo
+	//page 194 
+	//correctio 652
+	
+	private String nombre;
+	private String color;
+	private int edad;
+	private int carrerasGanadas;
+	public CaballoEj01() {
+		
+	}
+}

@@ -1,0 +1,18 @@
+package ud3;
+
+public class ArrayEx4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Teniendo un array de nombre y otro de edades de una clase. Sacar por
+		//pantalla los siguientes datos:
+		//Alumnos:
+		//Edad: 18,20,26,21,17,24
+		//1. El nombre y edad del más joven.
+		//2. El nombre y edad del mayor.
+		String nombre= { "Jon", "Sara", "Ander", "Marta", "Jone", "Mikel"};
+
+	}
+
+}

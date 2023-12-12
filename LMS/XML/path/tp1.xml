@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes"?>
+
+<exam xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+      xsd:noNamespaceSchemaLocation="correction.xsd"
+      code="coursXML">
+	<titre>Outils et Doc XML</titre>
+	<date mois="enero" annee="2008"/>
+		<questions>
+			<question>
+				<partie/>
+			</question>	
+			<question>
+				<partie/>
+			</question>	
+			<question>
+				<partie/>
+			</question>	
+			<question>
+				<partie/>
+			</question>	
+			<question>
+				<partie/>
+			</question>	
+		</questions>
+</exam>

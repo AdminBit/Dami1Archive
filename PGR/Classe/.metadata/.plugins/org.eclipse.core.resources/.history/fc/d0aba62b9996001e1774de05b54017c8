@@ -1,0 +1,6 @@
+package _09_ConceptosPOO;
+
+public class Vehiculo {
+	
+	protected int vehiculosCreados=0;
+}

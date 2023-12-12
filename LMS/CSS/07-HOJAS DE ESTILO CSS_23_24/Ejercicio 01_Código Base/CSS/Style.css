@@ -1,0 +1,59 @@
+		
+		
+		body{
+			background-color:#98fb98;
+			
+			}
+			
+			
+		h1 {
+			color: #F00; /* esto es un comentario de linea*/
+			font-familyVerdana, Calibri, sans-serif;
+			font-size:32px;
+		}
+		
+		
+		h2{
+			color: #A00;
+			font-familyVerdana, Calibri, sans-serif;
+			font-size:24px;
+
+		}
+		
+		
+		p {
+			color: blue; 
+		}
+	
+		strong {
+			font-size:20px;
+			font-style:bold;
+
+		}
+		
+		p span {
+			
+			font-style:italic;
+		    background-color: black; 
+			color:white;
+			
+		}
+		
+	li {
+			color: blue; 
+		
+		}
+
+
+	 #items span {
+			
+			font-style:italic;
+		    background-color: #000; 
+			color:#FFF;
+			
+		}
+
+	li span {
+			color: green; 
+			
+			}

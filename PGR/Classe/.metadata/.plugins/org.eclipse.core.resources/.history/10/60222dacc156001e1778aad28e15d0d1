@@ -1,0 +1,21 @@
+package ud1;
+
+import java.util.Scanner;
+
+public class MenuString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name;
+		Scanner teclado=new Scanner(System.in);
+		System.out.println("Cual es tu m¡nombre ? ");
+		teclado.nextLine();
+
+		
+		
+		
+		
+		teclado.close();
+	}
+
+}

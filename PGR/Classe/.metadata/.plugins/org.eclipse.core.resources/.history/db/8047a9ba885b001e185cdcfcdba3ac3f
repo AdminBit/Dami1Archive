@@ -1,0 +1,39 @@
+package ud1;
+
+import java.util.Scanner;
+
+public class EdeEj2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		Una empresa paga a sus N emplead@s en base a las horas trabajadas en la semana. Para esto por cada empleado
+//		se pide, el nº de días que ha trabajado en la semana y las horas que ha trabajado cada día @. Realiza un programa
+//		para determinar el sueldo semanal de cada trabajador@ y además, calcule cuánto pagó la empresa por los N
+//		emplead@s. Tendrás que tener en cuenta que:
+//		 El precio de la hora de trabajo, es la misma para tod@s l@s empleados 45,56€.
+//		 Si las horas trabajadas por un trabajador son superiores a 8 en el día, serán consideradas como extras,
+//		por lo que cobrara por cada hora extra un 3% más, siempre y
+		
+		int trabajadores; 
+		int dias;
+		int horas;
+		
+		Scanner sc = new Scanner (System.in);
+		System.out.println(" Numero de trabajadores :");
+		
+		trabajadores= sc.nextInt();
+		
+		for(int i=0;i<trabajadores ;i++ ) {
+			System.out.println(" Cuantas dias por el trabajador : " +i + " : ");
+			dias=sc.nextInt();
+			for(int j=0 ;j<dias ;j++ ) {
+				System.out.println("Cuantos horas has trabajado el dia  "+j+" :");
+				horas=sc.nextInt();
+			}
+			
+		}
+
+	}
+
+}

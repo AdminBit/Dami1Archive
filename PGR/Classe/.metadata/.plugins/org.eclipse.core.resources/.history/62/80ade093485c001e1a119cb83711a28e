@@ -1,0 +1,47 @@
+package ud1;
+
+import java.util.Scanner;
+
+public class EdeEj5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+//		. Escribe un programa en el que se introducirán 2 nº enteros y distintos
+//		(límite inferior y superior). Si el límite inferior
+//		es mayor que el superior le daremos un mensaje al usuario pero no le pediremos
+//		volver a introducir (los
+//		cambiaremos nosotros por programa). 
+		Scanner sc =new Scanner(System.in);
+
+		int limitInfer=0,limiteSuper;
+		do {
+			System.out.println("EL limite Inferiro : ");
+			limitInfer=sc.nextInt();
+			
+			System.out.println("EL limite Inferiro : ");
+			limiteSuper=sc.nextInt();
+				
+			}
+			while(limiteSuper < limitInfer );
+			
+		int myrang ; 
+		int oportunidades;
+		int myGuess;
+		myrang = (int) ((Math.random() * (limiteSuper - limitInfer)) + limitInfer);
+		System.out.println(myrang);
+		if(myrang <= 10) {
+			oportunidades=3;
+			System.out.println(" just lock this is my rang" + myrang + " tengo " + oportunidades +" oportunidades");
+			System.out.println("Guess the number");
+			myGuess=sc.nextInt();
+			
+		}
+		
+		
+		
+		
+	}
+
+}

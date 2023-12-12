@@ -1,0 +1,24 @@
+package ud6;
+
+public class ArrayListCadenasMenu {
+
+	public static void main(String[] args) {
+		
+		int opc;
+		do {
+			System.out.println("Añadir String. Pide un String y lo añade al array.");
+			System.out.println("Buscar String. Pide un String y lo busca en el array. Muestra un mensaje con la posición en que se\r\n");
+			System.out.println("encuentra o un mensaje de error si no se encuentra en el array.\r\n"
+					+ "");
+			System.out.println("Borrar String. Pide un String y lo elimina, si es que existe, del array.\r\n"
+					+ "");
+			System.out.println("Listar Array. Muestra todos los elementos del array por pantalla, si es que tiene elementos.\r\n"
+					+ "");
+			System.out.println("");
+			
+			Salir. Realiza las operaciones necesarias para la correcta finalización del programa.
+		}while(opc !=7);
+	
+	}
+
+}

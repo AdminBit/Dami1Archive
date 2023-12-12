@@ -1,0 +1,14 @@
+package ud6;
+
+public class Alumno {
+	
+	private String nif;
+	private String nombre;
+	private String apellido;
+	private String ciclo;
+	private boolean repetidor;
+	private ArrayList<Modulos> 
+	
+	
+
+}

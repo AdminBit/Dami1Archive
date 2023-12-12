@@ -1,0 +1,17 @@
+package _10_Colecciones_y_diccionarios;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> arr= new ArrayList<Integer>();
+		Scanner sc = new Scanner(System.in);
+
+		
+		sc.close();
+	}//main
+
+}

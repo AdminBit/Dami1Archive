@@ -1,0 +1,7 @@
+package ud6;
+
+public class Modulos {
+	private String nombre;
+	private double nota;
+
+}

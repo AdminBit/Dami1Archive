@@ -1,0 +1,74 @@
+package ud1;
+
+import java.util.Scanner;
+
+public class EjerciciosBucle01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int nFact;
+		int numeroDigi;
+		
+		System.out.println("**********Ejercicio 01 *******");
+
+		int i=5; 
+		
+		while(i<15)	{
+		System.out.println(i);
+		i++;
+		}
+		System.out.println("**********Ejercicio 02 *******");
+		
+		for(int j=200;j<=300 ;j++) {
+			System.out.println(j);
+		}
+		
+		System.out.println("**********Ejercicio 03 *******");
+
+		//
+		for(int k=0;k<10 ;k=k+2) {
+			
+		
+				System.out.println(k);
+		
+			}
+		
+		System.out.println("**********Ejercicio 04 *******");
+		// factorial
+		
+		
+		System.out.println("Introduce un Numero ");
+		nFact=sc.nextInt();
+		int fact=1;
+		for(int z=nFact;z>1; z-- ) {
+			fact=z*fact;
+		}
+		System.out.println("factorial de "  +nFact + " es : " + fact);
+
+		
+		
+		System.out.println("**********Ejercicio 05 *******");
+		
+		
+		System.out.println("Introduce un Numero entero ");
+			numeroDigi=sc.nextInt();
+			int count =1; 
+				while(numeroDigi>10) {
+					numeroDigi=numeroDigi/10;
+					count++;
+				}
+		System.out.println("Introduce un Numero entero "+ numeroDigi + "  " + count +" digitos");
+
+				
+				
+				
+				
+				
+				
+			sc.close();	
+				
+		}
+
+}

@@ -1,0 +1,124 @@
+package ud6;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		ArrayList<Alumno> alArr=new ArrayList<Alumno>();
+
+		char opc;
+
+		ArrayList<Modulos> mlist= new ArrayList<Modulos>();
+		Modulos m1= new Modulos("PGR",10);
+		Modulos m2= new Modulos("EDE",10);
+		Modulos m3= new Modulos("BDA",10);
+		mlist.add(m1);
+		mlist.add(m2);
+		mlist.add(m3);
+		alArr.add(new Alumno( "a1" , "aaa" , "abb", "info",
+				 false,mlist));
+		
+		do {
+			
+			System.out.println("a. Matricular alumno/a/s");
+			System.out.println("b. Listado de alumno/a/s");
+			System.out.println("Que queres hacer :");
+			
+			opc = sc.next().charAt(0);
+			switch (opc) {
+			case 'a':
+				matricularAlumno(sc,alArr);
+				break;
+			case 'b':
+				listarAlumnos(alArr);
+				break;
+			case 'c':
+				break;
+			case 'd':
+				break;
+			case 'e':
+				break;
+			case 'f':
+				break;
+			case 'g':
+				break;
+			case 'h':
+				break;
+			case 'i':
+				break;
+			default:
+				break;
+
+			}
+
+		} while (opc != 's' ||opc != 'S');
+
+	}// main
+	
+	public static void 	matricularAlumno(Scanner sc,ArrayList<Alumno> alArr) {
+		String nif;
+		String nombre;
+		String apellido;
+		String ciclo;
+		
+		boolean repetido;
+		
+		String moduloNom;
+		double moduloNota;
+		String continuar;
+		Modulos	m;
+		ArrayList<Modulos> mList=new ArrayList<Modulos>();
+		
+		System.out.println("introduzca nif :");
+		nif = sc.next();
+		if(alArr.) {
+			System.out.println("ya existe");
+		}
+		
+		System.out.println("introduzca nombre :");
+		nombre = sc.next();
+		
+		System.out.println("introduzca apellido :");
+		apellido = sc.next();
+		
+		System.out.println("introduzca ciclo :");
+		ciclo = sc.next();
+		
+		System.out.println("introduzca repetido :");
+		repetido = sc.nextBoolean();
+		
+		do {
+			System.out.println("introduzca modulo nombre :");
+			moduloNom = sc.next();
+			System.out.println("introduzca modulo nota :");
+			moduloNota = sc.nextDouble();
+			m=new Modulos(moduloNom,moduloNota);
+			if(mList.contains(m)) {
+				System.out.println("Modula ya existe.. ");
+			}
+			else {
+				mList.add(m);
+			}
+			
+			System.out.println("Queries andir mas modulos(si/no) :");
+			continuar=sc.next();
+			
+		}while(continuar.equals("si"));
+		
+		
+		alArr.add(new Alumno( nif , nombre , apellido, ciclo,
+				 repetido, mList));
+		
+		}
+	public static void listarAlumnos(ArrayList<Alumno> alArr){
+		for(Alumno a:alArr) {
+			System.out.println(a);
+		}
+	}
+
+
+}// class

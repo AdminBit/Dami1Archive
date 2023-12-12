@@ -1,0 +1,39 @@
+package ud1;
+
+public class EdeEj1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		boolean k=true;
+		int a=2;
+		int b=10;
+		int c=4;
+		
+		int n=1;
+		
+		while(k){
+			if(n%a ==0 && n%b == 0 && n%c == 0) {
+				System.out.println(n);
+					k=false;
+			}
+			n=n+1;
+		}
+		System.out.println("*********");
+
+
+	}
+
+}
+
+
+System.out.println("**********Ejercicio 06 *******");
+
+for(int a =0;a<3 ;a++ ) {
+	
+	do {
+		System.out.println("Introduce la nota de asignatura ");
+		nota=sc.nextDouble();
+
+		}while(nota >10 || nota <0);
+			
+}

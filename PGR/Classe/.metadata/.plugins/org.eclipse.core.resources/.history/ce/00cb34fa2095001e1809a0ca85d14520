@@ -1,0 +1,11 @@
+package _10_Colecciones_y_diccionarios;
+
+import java.util.ArrayList;
+
+public class Ejercicio4 {
+
+	public static void main(String[] args) {
+		ArrayList<String> arr= new ArrayList<String>();
+	}
+
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="exam">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="titre" type="xs:string" />
+				<xs:element name="date">
+					<xs:complexType>
+						<xs:attribute name="mois" use="required" />
+						<xs:attribute name="annee" type="xs:integer" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="questions">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="question" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="partie" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="code" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

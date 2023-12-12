@@ -1,0 +1,34 @@
+package ud3;
+
+import java.util.Scanner;
+
+public class ArrayEx4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Teniendo un array de nombre y otro de edades de una clase. Sacar por
+		//pantalla los siguientes datos:
+		//Alumnos:
+		//Edad: 18,20,26,21,17,24
+		//
+		//
+		Scanner sc = new Scanner(System.in);
+		String nombre[]= { "Jon", "Sara", "Ander", "Marta", "Jone", "Mikel"};
+		int edad []= {18,20,26,21,17,24};
+		int opcion ;
+		do {
+			System.out.println("1. El nombre y edad del más joven.");
+			System.out.println("2. El nombre y edad del mayor.");
+			System.out.println("1. salir");
+			opcion=sc.nextInt();
+			
+		}while (opcion !=3);
+		
+		
+		
+		
+		
+	}// main
+
+}

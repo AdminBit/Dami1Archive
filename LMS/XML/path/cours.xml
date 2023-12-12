@@ -1,0 +1,39 @@
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8" ?>
+<cours>
+	<titre>Exemple de xml</titre>
+	<auteur>Omar mourabit</auteur>
+	
+	<module>
+		<nom>pgr</nom>
+		<mh>180h</mh>
+		<date>10/11/2023</date>
+	</module>
+
+	<module>
+		<nom>pgr</nom>
+		<mh>180h</mh>
+		<date>10/11/2023</date>
+	</module>
+
+</cours>
+
+<!-- DTD -->
+<!ELEMENT cours(titre,auteur,module+)>
+<!ELEMENT titre(#PCDATA)>
+<!ELEMENT auteur(#PCDATA)>
+<!ELEMENT module(nom,mh,date)>
+<!ELEMENT nom(#PCDATA)>
+<!ELEMENT mh(#PCDATA)>
+<!ELEMENT date(#PCDATA)>
+
+<!-- XSD -->
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+</xs:schema>

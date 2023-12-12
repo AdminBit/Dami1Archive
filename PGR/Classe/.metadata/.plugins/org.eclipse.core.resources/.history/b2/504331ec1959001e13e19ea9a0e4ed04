@@ -1,0 +1,38 @@
+package ud1;
+
+import java.util.Scanner;
+
+public class Gestionarnotas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Introduce tu contraseña: 136ae
+		//ERROR, en la contraseña no puede aparecer la letra e. 
+		//Introduce de nuevo, por favor:
+		String name,password;
+		int opcion;
+		Scanner sc =new Scanner(System.in);
+		
+		System.out.println("Introduce tu usuario:");
+		name=sc.next();
+		
+		do {
+			System.out.println("Introduce tu contraseña");
+			password=sc.next();
+		}while(password.contains("e"));
+		
+		opcion=sc.nextInt();
+		switch(opcion) {
+		case 1 :
+			//
+			break;
+		case 2:
+			System.out.println("Salir de program");
+			System.exit(2);
+			break;
+		default:
+			System.out.println();
+		}
+	}
+
+}

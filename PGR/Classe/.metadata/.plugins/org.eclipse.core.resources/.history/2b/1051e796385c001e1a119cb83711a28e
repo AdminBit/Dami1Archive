@@ -1,0 +1,15 @@
+package ud1;
+
+public class EjerciciosBucle02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		for(int i=200;i<=300 ;i++) {
+			System.err.println(i);
+		}
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package ud4;
+
+public class Persona {
+
+	private String nombre;
+	private String DNI;
+	private int edad;
+	
+	public Persona() {
+		this.nombre="";
+		this.DNI="";
+		this.edad=0;
+	}
+	
+}
