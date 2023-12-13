@@ -2,7 +2,7 @@ package ud6;
 
 import java.util.ArrayList;
 
-public class Alumno {
+public class Alumno implements Comparable<Alumno> {
 	
 	private String nif;
 	private String nombre;
@@ -74,6 +74,22 @@ public class Alumno {
 		return "Alumno [nif=" + nif + ", nombre=" + nombre + ", apellido=" + apellido + ", ciclo=" + ciclo
 				+ ", repetidor=" + repetidor + ", m=" + m + "]";
 	}
+
+	@Override
+	public int compareTo(Alumno o) {
+		
+		if(this.nif.compareToIgnoreCase(o.getNif())>0) {
+			return 1;
+
+		}
+		else if(this.nif.compareToIgnoreCase(o.getNif())<0) {
+			return -1;
+
+		}
+
+		return 0;
+	}
+
 
 	
 	

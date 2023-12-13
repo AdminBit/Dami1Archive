@@ -9,6 +9,10 @@ public class Modulos {
 		this.nombre=nombre;
 		this.nota=nota;
 	}
+	public Modulos(String nombre) {
+		this.nombre=nombre;
+		this.nota=0.0;
+	}
 
 
 
@@ -33,15 +37,14 @@ public class Modulos {
 	public void setNota(double nota) {
 		this.nota = nota;
 	}
-
-
-
 	@Override
 	public String toString() {
 		return "Modulos [nombre=" + nombre + ", nota=" + nota + "]";
 	}
 
-	
+
+
+
 	
 	
 }
